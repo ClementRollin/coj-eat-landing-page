@@ -56,11 +56,24 @@ p {
     font-weight: normal;
 }
 
+header, nav, footer {
+    height: 15vh;
+}
+
+.navbar .container .navbar-brand {
+    width: 20vw;
+    height: 15vh;
+    background-image: url("assets/imgs/logo.png");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
 .hero-section {
     color: var(--vert-fonce);
-    border: var(--vert-fonce) 2px solid;
     padding: 80px 20px;
     display: flex;
+    height: 75vh;
 }
 
 .hero-section .container {
@@ -71,7 +84,8 @@ p {
 
 .hero-section .btn {
     font-size: 1rem;
-    margin: 10px;
+    margin: 10px 10px 0 0;
+    width: 10vw;
 }
 
 .btn-primary {
