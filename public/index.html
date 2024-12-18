@@ -12,14 +12,14 @@
         <header>
             <nav class="navbar navbar-expand-lg">
                 <div class="container d-flex justify-content-between align-items-center">
-                    <div class="d-flex">
+                    <div class="d-flex navbar-links">
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item"><a class="nav-link" href="#">Nos valeurs</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Notre histoire</a></li>
                         </ul>
                     </div>
                     <div class="navbar-brand mx-auto text-center"></div>
-                    <div class="d-flex">
+                    <div class="d-flex navbar-links">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item"><a class="nav-link" href="#">Nos tables virtuelles</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Nous contacter</a></li>
@@ -41,10 +41,8 @@
         <section class="container-fluid accroche-produit py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <img src="https://via.placeholder.com/600x300" alt="">
-                    </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 img-app"></div>
+                    <div class="col-md-6 content">
                         <h3>Titre</h3>
                         <p>Description de l'application pour expliquer son fonctionnement et ses avantages.</p>
                         <ul>
@@ -104,41 +102,31 @@
             <div class="container">
                 <h1 class="mb-4">LES TABLES VIRTUELLES</h1>
                 <p class="valeurs-tables-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis erat ligula, pharetra sed commodo vitae, iaculis vel arcu. Praesent ut urna vitae eros aliquam accumsan. Mauris venenatis mattis diam, quis lobortis odio efficitur nec. Vestibulum non tortor nisi. Aenean ac purus in ante blandit cursus. In sit amet elementum diam, eget tincidunt purus. Pellentesque malesuada maximus urna nec pulvinar. In in facilisis ligula. Aliquam volutpat, diam at elementum imperdiet.</p>
-                <div class="row">
-                    <div class="col-md-3">
-                        <img src="https://via.placeholder.com/300x300" alt="">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="https://via.placeholder.com/300x300" alt="">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="https://via.placeholder.com/300x300" alt="">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="https://via.placeholder.com/300x300" alt="">
-                    <div class="col-md-4">
-                        <div class="bg-light p-5">Table 3</div>
-                    </div>
+                <div class="row cards">
+                    <div class="col-md-3 cards-valeurs"></div>
+                    <div class="col-md-3 cards-valeurs"></div>
+                    <div class="col-md-3 cards-valeurs"></div>
+                    <div class="col-md-3 cards-valeurs"></div>
                 </div>
             </div>
         </section>
         <section class="accroche py-5">
             <div class="container">
                 <div class="row text-center justify-content-center">
-                    <div class="col-md-4 bloc position-relative px-0">
-                        <img src="assets/imgs/ecole.jpg" class="img-fluid img-overlay">
+                    <div class="col-md-4 bloc position-relative px-0 img-overlay">
+                        <div class="img-fluid ecole"></div>
                         <div class="overlay-text">
                             <h3>"Facilitez la vie de vos étudiants : des repas rapides, économiques et partagés ! 🎓🍴"</h3>
                         </div>
                     </div>
-                    <div class="col-md-4 bloc position-relative px-0">
-                        <img src="assets/imgs/restaurateur.jpg" class="img-fluid img-overlay">
+                    <div class="col-md-4 bloc position-relative px-0 img-overlay">
+                        <div class="img-fluid restaurant"></div>
                         <div class="overlay-text">
                             <h3>"Attirez plus de clients et boostez vos commandes grâce aux repas groupés ! 🍽️🚀"</h3>
                         </div>
                     </div>
-                    <div class="col-md-4 bloc position-relative px-0">
-                        <img src="assets/imgs/student.jpg" class="img-fluid img-overlay">
+                    <div class="col-md-4 bloc position-relative px-0 img-overlay">
+                        <div class="img-fluid etudiants"></div>
                         <div class="overlay-text">
                             <h3>"Simplifiez vos repas en groupe et partagez l'addition en un clic ! 🍕📱"</h3>
                         </div>
