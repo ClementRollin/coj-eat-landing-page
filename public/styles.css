@@ -118,6 +118,53 @@ header, nav, footer {
     background-color: var(--vert-fonce);
     color: var(--blanc);
     padding: 50px 0;
+    background-size: cover; /* L'image couvre toute la section */
+    background-position: center; /* Centrer l'image */
+    position: relative;
+    z-index: 1;
+}
+
+.mission-histoire::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Voile noir semi-transparent */
+    z-index: -1; /* Place derrière le contenu */
+}
+
+
+/* Cartes */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Ombre sur les cartes */
+.card.shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .mission-histoire h3 {
@@ -126,7 +173,8 @@ header, nav, footer {
 
 .mission-histoire p {
     font-size: 1rem;
-    color: var(--blanc);
+    color: var(--vert-fonce);
+    height: 150px;
 }
 
 .form-container {
@@ -150,3 +198,35 @@ header, nav, footer {
     justify-content: space-around;
     background-color: blue;
 }
+
+.bloc img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.img-overlay {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.img-overlay:hover {
+    opacity: 2;
+}
+
+.overlay-text h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.position-relative {
+    position: relative;
+}
+
