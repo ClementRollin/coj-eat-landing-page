@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'ScaleVF-ExtendedBold';
-    src: url('https://fonts.adobe.com/fonts/scale-variable') format('woff2');
+    src: url('https://fonts.adobe.com/fonts/scale-variable?vf-instance=Extended+Bold&vf-font-size=100&vf-font=ScaleVF-Regular') format('woff2');
 }
 @font-face {
     font-family: 'HandsomeProRough';
@@ -25,7 +25,7 @@
 h1, h2, h3 {
     margin-bottom: 20px;
     line-height: 1.2;
-    font-family: var(--font-titre), serif;
+    font-family: var(--font-titre), sans-serif;
 }
 
 h1 {
@@ -261,7 +261,21 @@ header {
 
 .form-image {
     width: 50%;
-    border: 1px solid black;
+    background-image: url("assets/imgs/banniere.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-image-logo {
+    width: 50%;
+    height: 50%;
+    background-image: url("assets/imgs/logo.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .form-radio {
