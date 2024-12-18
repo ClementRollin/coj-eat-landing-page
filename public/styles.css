@@ -1,0 +1,314 @@
+@font-face {
+    font-family: 'ScaleVF-ExtendedBold';
+    src: url('https://fonts.adobe.com/fonts/scale-variable') format('woff2');
+}
+@font-face {
+    font-family: 'HandsomeProRough';
+    src: url('https://fonts.adobe.com/fonts/handsome-pro') format('woff2');
+}
+@font-face {
+    font-family: 'ScaleVF-CondensedExtraLight';
+    src: url('https://fonts.adobe.com/fonts/scale-variable') format('woff2');
+}
+
+:root {
+    --orange: #F88F01;
+    --blanc: #ECEDDF;
+    --vert-fonce: #1A3324;
+    --vert-clair: #88BC61;
+    --violet: #8080D5;
+    --font-titre: 'ScaleVF-ExtendedBold', sans-serif;
+    --font-corps: 'HandsomeProRough', sans-serif;
+    --font-section: 'ScaleVF-CondensedExtraLight', sans-serif;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-family: var(--font-titre), serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--vert-fonce);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--violet);
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--orange);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--vert-fonce);
+    font-family: var(--font-corps), sans-serif;
+    font-weight: normal;
+}
+
+header {
+    height: 100vh;
+    background-image: url("https://via.placeholder.com/800x600");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar .container .navbar-brand {
+    width: 20vw;
+    height: 15vh;
+    background-image: url("assets/imgs/logo.png");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.navbar-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.hero-section {
+    color: var(--vert-fonce);
+    padding: 80px 20px;
+    display: flex;
+    height: 75vh;
+}
+
+.hero-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-section-p {
+    width: 40vw;
+}
+
+.hero-section .btn {
+    font-size: 1rem;
+    margin: 10px 10px 0 0;
+    width: 10vw;
+}
+
+.btn-primary {
+    background-color: var(--vert-fonce);
+    border-color: var(--vert-fonce);
+}
+
+.btn-primary:hover {
+    background-color: var(--vert-clair);
+    border-color: var(--vert-clair);
+    color: var(--vert-fonce);
+}
+
+.accroche-produit {
+    background-color: var(--vert-fonce);
+}
+.accroche-produit .row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accroche-produit .img-app {
+    width: 40%;
+    height: 35vh;
+    background-image: url("https://via.placeholder.com/600x300");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.accroche-produit .content {
+    width: fit-content;
+}
+.accroche-produit p {
+    color: var(--blanc) !important;
+}
+.accroche-produit li {
+    color: var(--blanc) !important;
+}
+
+.valeurs {
+    text-align: center;
+    margin: 40px 0;
+}
+.valeurs .container .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.valeurs .icon {
+    font-size: 3rem;
+    color: var(--violet);
+}
+.valeurs-content {
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.valeurs p {
+    color: var(--vert-fonce);
+    font-weight: bold;
+    font-size: large;
+    margin-top: auto !important;
+}
+.valeurs-tables-p {
+    width: 75%;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+}
+.cards-valeurs {
+    width: 20vw;
+    height: 30vh;
+    background-image: url("https://via.placeholder.com/300x300");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mission-histoire {
+    background-color: var(--vert-fonce);
+    color: var(--blanc);
+    padding: 50px 0;
+    background-size: cover; /* L'image couvre toute la section */
+    background-position: center; /* Centrer l'image */
+    position: relative;
+    z-index: 1;
+}
+
+.mission-histoire::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Voile noir semi-transparent */
+    z-index: -1; /* Place derrière le contenu */
+}
+
+
+/* Cartes */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Ombre sur les cartes */
+.card.shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mission-histoire h3 {
+    color: var(--orange);
+}
+
+.mission-histoire p {
+    font-size: 1rem;
+    color: var(--vert-fonce);
+    height: 150px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-input {
+    width: 45%;
+}
+
+.form-image {
+    width: 50%;
+    border: 1px solid black;
+}
+
+.form-radio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: blue;
+}
+
+.img-fluid {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+.ecole {
+    background-image: url("assets/imgs/ecole.jpg");
+}
+.restaurant {
+    background-image: url("assets/imgs/restaurateur.jpg");
+}
+.etudiants {
+    background-image: url("assets/imgs/student.jpg");
+}
+
+.img-overlay {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.img-overlay:hover {
+    opacity: 2;
+}
+
+.overlay-text h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.position-relative {
+    position: relative;
+}
+
